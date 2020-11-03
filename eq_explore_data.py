@@ -7,9 +7,15 @@ with open(filename) as f:
 
 all_eq_dicts = all_eq_data['features']
 
-mags = []
+mags, lons, lats = [], [], []
 for eq_dict in all_eq_dicts:
     mag = eq_dict['properties']['mag']  # Getting the magnitude of the earthquake from our data.
+    lon = eq_dict['geometry']['coordinates'][0]  # gets the longitude
+    lat = eq_dict['geometry']['coordinates'][1]  # gets the latitude
     mags.append(mag)
+    lons.append(lon)
+    lats.append(lat)
 
 print(mags[:10])
+print(lons[:10])
+print(lats[:10])
