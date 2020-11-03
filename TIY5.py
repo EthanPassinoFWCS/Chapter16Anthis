@@ -14,7 +14,6 @@ try:
         station_index = header_row.index("STATION")
         name_index = header_row.index("NAME")
 
-        print(maxtemp_index)
         dates, highs, lows = [], [], []
 
         station = ""
