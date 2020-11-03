@@ -33,7 +33,7 @@ with open(filename) as f:
     plt.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
 
     # Format the plot.
-    plt.title("Daily high and low temperatures - 2018", fontsize=24)
+    plt.title("Daily high and low temperatures - 2018\nDeath Valley, CA", fontsize=20)
     plt.xlabel("", fontsize=16)
     fig.autofmt_xdate()
     plt.ylabel("Temperature (F)", fontsize=16)
